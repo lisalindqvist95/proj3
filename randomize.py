@@ -37,10 +37,3 @@ def randomfu():
 
     else:
         print(randomObjekt)
-       
-        
-
-
-
-
-   

@@ -15,7 +15,7 @@ def recommend():
         print("3. Linguini Carbonara\nLinguini m pancetta, vittvin, grädde, lök, svart peppar, äggula.\n")
         print("4. Penne Stravaganti\nPastarör m oxfilé, champinjoner, grädde, skysås, vitlök, peperoncini.\n")
       
-        x = int(input("Skriv in ditt val"))
+        x = int(input("Skriv in ditt val\n"))
         if (x == 1):
             system('clear')
             print("Rekommenderade viner:\n")

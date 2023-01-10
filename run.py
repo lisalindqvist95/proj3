@@ -31,7 +31,7 @@ while z == 1:
     try:
         print()
         print("Enter your choice: ")
-        menu_select = int(input())
+        menu_select = int(input("\n"))
         """
         Collect user input, menu choice. 
         """
@@ -80,7 +80,7 @@ while z == 1:
         """
         Let user know the have to choose a number between 1-5 in case they press another key.
         """
-    go_back = input("Press 'enter' to go back again.")
+    go_back = input("Press 'enter' to go back again.\n")
     """
     Let the user return to the main menu. 
     """
