@@ -1,10 +1,20 @@
 from os import system
 z = 1
 while z == 1:
+    """
+    Loop for the system to run until user chooses to exit. 
+    """
+
     system('clear')
+    """
+    Clear terminal.
+    """
 
     menuoptions = ["", "1. Winelist", "2. Review yor drink",
     "3. Randomize drink", "4. Recommended wines", "5. Exit"]
+    """
+    List of menu options.
+    """
 
     print("**********************")
     print("         MENU         ")
@@ -14,34 +24,63 @@ while z == 1:
     print(menuoptions[3])
     print(menuoptions[4])
     print(menuoptions[5])
+    """
+    Print out the menu for the user. 
+    """
  
     try:
         print()
         print("Enter your choice: ")
-        menuSelect = int(input())
+        menu_select = int(input())
+        """
+        Collect user input, menu choice. 
+        """
   
-        if menuSelect == 1:
+        if menu_select == 1:
             from winelist import winelist 
             winelist()
+            """
+            Call function from winelist.py if user chooses menu option one.
+            """
 
-        elif menuSelect == 2:
+        elif menu_select == 2:
             from review import review
             review()
+            """
+            Call function from review.py if user chooses menu option two.
+            """
 
-        elif menuSelect == 3:
+        elif menu_select == 3:
             from randomize import randomfu
             randomfu()
+            """
+            Call function from randomize.py if user chooses menu option three.
+            """
 
-        elif menuSelect == 4:
+        elif menu_select == 4:
             from recommend import recommend
             recommend()
+            """
+            Call function from recommend.py if user chooses menu option four.
+            """
 
-        elif menuSelect == 5:
-            print("Exiting program")
+        elif menu_select == 5:
+            print("Exiting program.")
             break
-
+            """
+            Exit program if user chooses menu option five.
+            """
         else:
             print("Invalid choice. Please select a number between 1-5 from the menu.")
-    except ValueError:
-        print("Invalid choice. Please select a number between 1-5 from the menu.")
-    ok = input("Press 'enter' to go back again.")
+            """
+            Let user know the have to choose a number between 1-5 in case they choose another number.
+            """
+    except ValueError as e:
+        print(f"Invalid choice {e}. Please select a number between 1-5 from the menu.")
+        """
+        Let user know the have to choose a number between 1-5 in case they press another key.
+        """
+    go_back = input("Press 'enter' to go back again.")
+    """
+    Let the user return to the main menu. 
+    """
