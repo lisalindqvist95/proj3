@@ -17,12 +17,13 @@ SHEET = GSPREAD_CLIENT.open('drink_review_data')
 def review():
     def get_data_str():
         while True:
+            print("Enter your table number.")
             print("Rate your drinks today between 1-5.")
-
-            data_str = int(input("Enter your rating here:\n"))
+            data_str = input("Enter your rating here:\n")
 
             if validate_data(data_str):
-                print("Data is valid!")
+                    print("Data is valid!")
+
                 break
 
         return data_str
@@ -34,7 +35,7 @@ def review():
                 raise ValueError(
                     f"1 value between 1-5 is required, you provided {len(values)}"
                 )
-                
+
         except ValueError as e:
             print(f"Invalid data: {e}, please try again.\n")
             return False
