@@ -2,7 +2,7 @@ from os import system
 z = 1
 while z == 1:
     """
-    Loop for the system to run until user chooses to exit. 
+    Loop for the system to run until user chooses to exit.
     """
 
     system('clear')
@@ -11,7 +11,7 @@ while z == 1:
     """
 
     menuoptions = ["", "1. Winelist", "2. Review yor drink",
-    "3. Randomize drink", "4. Recommended wines", "5. Exit"]
+                   "3. Randomize drink", "4. Recommended wines", "5. Exit"]
     """
     List of menu options.
     """
@@ -25,19 +25,19 @@ while z == 1:
     print(menuoptions[4])
     print(menuoptions[5])
     """
-    Print out the menu for the user. 
+    Print out the menu for the user.
     """
- 
+
     try:
         print()
         print("Enter your choice: ")
         menu_select = int(input("\n"))
         """
-        Collect user input, menu choice. 
+        Collect user input, menu choice.
         """
-  
+
         if menu_select == 1:
-            from winelist import winelist 
+            from winelist import winelist
             winelist()
             """
             Call function from winelist.py if user chooses menu option one.
@@ -71,16 +71,18 @@ while z == 1:
             Exit program if user chooses menu option five.
             """
         else:
-            print("Invalid choice. Please select a number between 1-5 from the menu.")
+            print("Invalid choice. Please select a number between 1-5.")
             """
-            Let user know the have to choose a number between 1-5 in case they choose another number.
+            Let user know the have to choose a number between 1-5
+            in case they choose another number.
             """
-    except ValueError as e:
-        print(f"Invalid choice {e}. Please select a number between 1-5 from the menu.")
+    except ValueError:
+        print("Invalid choice. Please select a number between 1-5.")
         """
-        Let user know the have to choose a number between 1-5 in case they press another key.
+        Let user know the have to choose a number between 1-5
+        in case they press another key.
         """
     go_back = input("Press 'enter' to go back again.\n")
     """
-    Let the user return to the main menu. 
+    Let the user return to the main menu.
     """

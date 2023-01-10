@@ -17,7 +17,7 @@ def randomfu():
     elif (randomObjekt == 3):
 	      print("Cosmopolitan\n\n- citrus vodka\n- 1 oz Cointreau\n- lime juice\n- cranberry juice\n")
     
-    elif(randomObjekt == 4):
+    elif (randomObjekt == 4):
 		     print("Negroni\n\n- gin\n- Campari\n- sweet vermouth\n")
     
     elif (randomObjekt == 5):
