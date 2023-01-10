@@ -1,15 +1,32 @@
 from os import system
+import gspread
+from google.oauth2.service_account import Credentials
+
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open('drink_review_data')
+
+name = SHEET.worksheet('name')
+data = name.get_all_values()
+
 z = 1
 while z == 1:
     """
     Loop for the system to run until user chooses to exit.
     """
-
+    
     system('clear')
     """
     Clear terminal.
     """
-
+    print(data)
     menuoptions = ["", "1. Winelist", "2. Review yor drink",
                    "3. Randomize drink", "4. Recommended wines", "5. Exit"]
     """
