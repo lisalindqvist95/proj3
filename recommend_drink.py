@@ -1,52 +1,60 @@
 from os import system
 
+
 def recommend():
     system('clear')
-    x = 0
-    try:
-        whitewineArray = ["Husets Vita 385:-, 95:-\n\n", "Santa Tresa Rina Ianca, Sicilien (Bio) 395:-, 100:-\n\n"]
+    meal = 0
+    heading = "Recommended wines:\n"
+    white_wine_tup = ("Tolloy Pinot Grigio", "Pascal Jolivet Sancerren",
+                      "Allan Scott Sauvignon Blanc", "William Fevre Chablis")
 
-        redwineArray = ["Nivuro, Santa Tersea, Sicilien (Bio) 395:- , 100:-\n\n", "Corte Giara Corvina, Allegrini, Veneto, 400:-, 110:-\n\n"]
-            
-        print("Skriv in siffran på din maträtt från menyn: ")
-        print("____________________")
-        print("1. Linguini Vongole\nLinguini m vongole, vitlök, vittvin, peperoncini, tomat, olivolja, persilja.\n")
-        print("2. Linguini al Tonno\nLinguini m färsk tonfisk, vitlök, persilja, peperoncini, cocktail tomat, oliver,lök, kapris,olivolja.\n")
-        print("3. Linguini Carbonara\nLinguini m pancetta, vittvin, grädde, lök, svart peppar, äggula.\n")
-        print("4. Penne Stravaganti\nPastarör m oxfilé, champinjoner, grädde, skysås, vitlök, peperoncini.\n")
-      
-        x = int(input("Skriv in ditt val\n"))
-        if (x == 1):
-            system('clear')
-            print("Rekommenderade viner:\n")
-            for i in whitewineArray:
-                print(i)
-              
-        elif (x == 2):
-            system('clear')
-            print("Rekommenderade viner:\n") 
-            whitewineArray[0] = "Soave ”Vinge della Corte”, Corte Adami, Venetien 435:-\n\n";
-            for i in whitewineArray:
-                print(i)
-                
-        elif (x == 3):
-            system('clear')
-            print("Rekommenderade viner:\n")
+    red_wine_tup = ("Evolution Pinot Noir",
+                    "Terrazas de Los Andes Malbec Reserva",
+                    "Baron de Brane Bordeaux Blend",
+                    "Newton Unfiltered Cabernet")
 
-            for i in redwineArray:
-                print(i)
-          
-        elif (x == 4):
-            system('clear')
-            print("Rekommenderade viner:\n")
+    print("Choose a meal from the menu:\n")
+    print("1. HALIBUT EN PAPILLOTE\nBlack beluga lentils, pattypan squash,"
+          "champagne beurre blanc, candied lemon.\n")
+    print("2. SCALLOP RISOTTO\nSeasonal mushrooms, brown butter\n")
+    print("3. GRASS FED RIBEYE STEAK (12OZ)\nGrilled vine tomato,"
+          "parmesan-truffle fries, herb compound butter\n")
+    print("4. STEAKHOUSE BURGER\nBrioche bun, bacon, fries\n")
+    meal = int(input("Enter the number of your choice\n"))
+    while True:
+        try:
+            if meal == 1:
+                system('clear')
+                print(heading)
+                slice_tup = white_wine_tup[0:2]
+                for i in slice_tup:
+                    print("*" + i + "\n")
 
-            redwineArray[0] = "Testal Rosso del Veronese, Nicolis, Veneto 550:-\n\n";
-            for i in redwineArray:
-                print(i)
-        
-        else:
-            system('clear')
-            print("Du gjorde inget giltigt val!\nGå tillbaka till menyn och gör ett nytt val")
-  
-    except:
-            print("Oops!  That was no valid number.  Try again...")
+            elif meal == 2:
+                system('clear')
+                print(heading)
+                slice_tup = white_wine_tup[1:2:3]
+                for i in slice_tup:
+                    print("*" + i + "\n")
+
+            elif meal == 3:
+                system('clear')
+                print(heading)
+                slice_tup = red_wine_tup[1:3]
+                for i in slice_tup:
+                    print("*" + i + "\n")
+
+            elif meal == 4:
+                system('clear')
+                print(heading)
+                slice_tup = red_wine_tup[2:3]
+                for i in slice_tup:
+                    print("*" + i + "\n")
+
+            else:
+                if meal > 4 or meal < 1:
+                    raise ValueError()
+
+        except ValueError:
+            print("Please choose a number between 1-4.")
+        break

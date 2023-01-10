@@ -1,7 +1,9 @@
 from os import system
-system('clear')
+
+
 def review():
-  
+    system('clear')
+
     food = input("Vilken maträtt beställde du?\n")
     drink = input("Vilken dryck beställde du?\n")
     while True:
