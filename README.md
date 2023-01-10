@@ -29,7 +29,7 @@ Heres a link to the live [project]()
 - __Review Your Drink__
 
   - This feature lets the user rate their drink choice and their input is exported to a Google sheet for the restaurant to recieve the reviews. 
-  - The user adds 
+  - The user adds the number for their table and a score between 1-5. 
   - If the user enters invalid data the will recieve an error message to try again. 
 
 ![Review your drink](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
@@ -66,7 +66,8 @@ __Order__
 __Style__
 - For this to be a desireble menu it would need some styling using HTML and CSS. 
 
-## Data Model 
+## Data model
+The project contains a main file for the menu and differnt files containing the functions of each feature for a better structure. Since all features contains differnet information they are easier to read and update if they are contained in different files instead of having everything in the same file. 
 
 ## Testing 
 
@@ -105,5 +106,7 @@ The project was depoloyed via Heroku.
 
 - List of wines for Wine List from [Plaza New York](https://www.theplazany.com/wp-content/uploads/2022/06/Champagne-Bar-Cocktail-Menu-June-2022.pdf )
 - List of foods for Recommend Drink from [Hilton New York](https://www.hilton.com/en/hotels/nyccnci-conrad-new-york-midtown/dining/dabble/?WT.mc_id=zlada0ww1CH2psh3ggl4ampanc5dkt6NYCCNCI7_153682779_1003528&gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNnS0MLheFT-zCeFlZ_lNykji4kJnOaVp12Rx0hTuugspU82tBjJS28aAiDOEALw_wcB&gclsrc=aw.ds&htmlMenu4ActiveTab=2)
-- Drink revipes from [Wikipedia](https://www.wikipedia.org/)
-- Code Institute Love Sandwiches project
+- Drink redipes from [Wikipedia](https://www.wikipedia.org/)
+- How to clear terminal from [Scaler](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
+- Code Institute for Love Sandwiches project
+- Code Institute for Python Essentials Template
