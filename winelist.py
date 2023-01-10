@@ -1,49 +1,39 @@
 from os import system
 
-def winelist(): 
+
+def winelist():
     system('clear')
-    print("Mousserande Viner:")
-    print()
+    print("Sparkling wines by the glass:\n")
 
-    SparklingList = ["Rotari Cuvèe 28 piccolo (200 ml)\n", "Rotari Cuvèe 28\n"]
+    sparkling_list = ["Moet & Chandon Dom Pérignon",
+                      "Perrier-Jouët Grand Brut"]
 
-    for x in SparklingList:
-        print(("* ") + x)
+    for wine in sparkling_list:
+        print(("* ") + wine + "\n\n")
 
-    print()
-    print()
+    print("White wine:\n")
 
-    print("Vita Viner:")
-    print()
+    white_list = ["Tolloy Pinot Grigio", "Pascal Jolivet Sancerren",
+                  "Allan Scott Sauvignon Blanc", "William Fevre Chablis"]
 
-    WhiteList = [
-    "Husets Vita 385:-, 95:-\n",
-    "Santa Tresa Rina Ianca, Sicilien (Bio) 395:- 100:-\n","Soave ”Vinge della Corte”, Corte Adami, Venetien 435:-\n","Pinot Grigio Ciani, Trentino 450:-\n"]
+    for wine in white_list:
+        print(("* ") + wine + "\n\n")
 
-    for x in WhiteList:
-        print(("* ") + x)
+    print("Red wine:\n")
 
-    print()
-    print()
+    red_list = ["Evolution Pinot Noir", "Terrazas de Los Andes Malbec Reserva",
+                "Baron de Brane Bordeaux Blend", "Newton Unfiltered Cabernet"]
 
-    print("Röda Viner:")
-    print()
+    red_list.pop(0)
+    red_list.append("La Crema Pinot Noir")
 
-    redList = [
-    "Nivuro, Santa Tersea, Sicilien (Bio) 395:- , 100:-\n", "Corte Giara Corvina, Allegrini, Veneto, 400:-, 110:-\n", "Chianti Riserva, Collezione Oro, Piccini, Toscana 430:-\n",
-"Barbera dÀsti, Cerutti, Piemonte 460:-\n", "Valpolicella Ripasso, Corte Adami , Veneto 485:-\n", "Pinot Nero, Endrizzi, Trentino, 495:-\n",
- "Testal Rosso del Veronese, Nicolis, Veneto 550:-\n", "Langhe Nebbiolo, La Spinetta, Piemonte 575:-\n", "Barolo, Broccardo, Piemonte 585:-\n", "Barbaresco, Giacone, Casina Alberta, Piemonte 595:-\n", "Podere 29, Gelso d´Oro, Puglia 595:-\n"]
+    for wine in red_list:
+        print(("* ") + wine + "\n\n")
 
-    for x in redList:
-        print(("* ") + x)
+    print("Rosé wine:\n")
 
-    print()
-    print()
+    rose_list = ["Domaine Sainte Marie Vie Vité",
+                 "Chateau d'Esclans Whispering Angel"]
 
-    print("Rosé Viner:")
-    print()
-
-    RoseList = ["Husets rosé 385:-, 95:- gl\n\n"]
-
-    for x in RoseList:
-        print(("* ") + x)
+    for wine in rose_list:
+        print(("* ") + wine + "\n\n")
