@@ -13,9 +13,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('drink_review_data')
 
-name = SHEET.worksheet('name')
-data = name.get_all_values()
-
 z = 1
 while z == 1:
     """
@@ -26,7 +23,6 @@ while z == 1:
     """
     Clear terminal.
     """
-    print(data)
     menuoptions = ["", "1. Winelist", "2. Review yor drink",
                    "3. Randomize drink", "4. Recommended wines", "5. Exit"]
     """
