@@ -44,24 +44,24 @@ while z == 1:
             """
 
         elif menu_select == 2:
-            from review import review
+            from review_drink import review
             review()
             """
-            Call function from review.py if user chooses menu option two.
+            Call function from review_drink.py if user chooses menu option two.
             """
 
         elif menu_select == 3:
-            from randomize import randomfu
-            randomfu()
+            from randomize_drink import randomize
+            randomize()
             """
-            Call function from randomize.py if user chooses menu option three.
+            Call function from randomize_drink.py if user chooses menu option three.
             """
 
         elif menu_select == 4:
-            from recommend import recommend
+            from recommend_drink import recommend
             recommend()
             """
-            Call function from recommend.py if user chooses menu option four.
+            Call function from recommend_drink.py if user chooses menu option four.
             """
 
         elif menu_select == 5:
