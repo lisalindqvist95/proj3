@@ -2,6 +2,10 @@ from os import system
 
 
 def winelist():
+    """
+    Function prints out menu.
+    """
+
     system('clear')
     print("Sparkling wines by the glass:\n")
 
@@ -37,3 +41,8 @@ def winelist():
 
     for wine in rose_list:
         print(("* ") + wine + "\n\n")
+
+    """
+    Wine-list from
+    https://www.theplazany.com/wp-content/uploads/2022/06/Champagne-Bar-Cocktail-Menu-June-2022.pdf
+    """

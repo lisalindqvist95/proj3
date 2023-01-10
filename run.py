@@ -1,24 +1,12 @@
 from os import system
-import gspread
-from google.oauth2.service_account import Credentials
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
-
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('drink_review_data')
 
 z = 1
 while z == 1:
     """
     Loop for the system to run until user chooses to exit.
     """
-    
+
     system('clear')
     """
     Clear terminal.
@@ -67,14 +55,16 @@ while z == 1:
             from randomize_drink import randomize
             randomize()
             """
-            Call function from randomize_drink.py if user chooses menu option three.
+            Call function from randomize_drink.py
+            if user chooses menu option three.
             """
 
         elif menu_select == 4:
             from recommend_drink import recommend
             recommend()
             """
-            Call function from recommend_drink.py if user chooses menu option four.
+            Call function from recommend_drink.py
+            if user chooses menu option four.
             """
 
         elif menu_select == 5:
@@ -92,10 +82,10 @@ while z == 1:
     except ValueError:
         print("Invalid choice. Please select a number between 1-5.")
         """
-        Let user know the have to choose a number between 1-5
+        Let user know they have to choose a number between 1-5
         in case they press another key.
         """
     go_back = input("Press 'enter' to go back again.\n")
     """
-    Let the user return to the main menu.
+    Lets the user return to the main menu.
     """

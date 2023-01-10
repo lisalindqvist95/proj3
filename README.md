@@ -89,7 +89,7 @@ __Style__
 
 ## Unfixed Bugs
 
-- Since the user inserts the table-number and the review in the same input, there is a risk that the user will input the wrong table number or rating that is not between 1-5.This could be solved by using another type of form (for example via HTML) to get this information and separate the data collection. Or if you can get the Table/ordernumber via the QR-code you might not need to enter this manually, but this would requer more comlicated back-end coding.
+- Since the user inserts the table-number and the review in the same input, there is a risk that the user will input the wrong table number or rating that is not between 1-5. This could be solved by using another type of form (for example via HTML) to get this information and separate the data collection. Or if you can get the Table/ordernumber via the QR-code you might not need to enter this manually, but this would requer more comlicated back-end coding.
 
 
 ## Deployment
@@ -103,4 +103,7 @@ The project was depoloyed via Heroku.
 
 ## Credits 
 
-- 
+- List of wines for Wine List from [Plaza New York](https://www.theplazany.com/wp-content/uploads/2022/06/Champagne-Bar-Cocktail-Menu-June-2022.pdf )
+- List of foods for Recommend Drink from [Hilton New York](https://www.hilton.com/en/hotels/nyccnci-conrad-new-york-midtown/dining/dabble/?WT.mc_id=zlada0ww1CH2psh3ggl4ampanc5dkt6NYCCNCI7_153682779_1003528&gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNnS0MLheFT-zCeFlZ_lNykji4kJnOaVp12Rx0hTuugspU82tBjJS28aAiDOEALw_wcB&gclsrc=aw.ds&htmlMenu4ActiveTab=2)
+- Drink revipes from [Wikipedia](https://www.wikipedia.org/)
+- Code Institute Love Sandwiches project
