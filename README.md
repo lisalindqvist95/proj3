@@ -2,9 +2,9 @@
 
 Interactive Drink Menu is, just like the name implies, a drink menu for a restaurant which the user can interact with. When a lot more menus are digital and acciessible via QR-codes there is an opportunity to include more interactive features for the user. For example the possibility to get recommended drinks or rating their drinks which also can benefit the restaurant to improve their menu. A digital menu is also easier for the restaurant to update when an item runs out. 
 
-Heres a link to the live [project]()
+Heres a link to the live [project](https://interactive-drink-menu.herokuapp.com/)
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Responsice Mockup](https://github.com/lisalindqvist95/proj3/blob/main/media/mockup.png)
 
 ## Features 
 
@@ -16,7 +16,7 @@ Heres a link to the live [project]()
   - The user chooses which feature they want to access by inputting a number.
   - If the user inputs a number that is not part of the menu they will recieve an error message and get the chance to try again. 
 
-![Menu](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Menu](https://github.com/lisalindqvist95/proj3/blob/main/media/exit.png)
 
 - __The Wine List__
 
@@ -24,7 +24,7 @@ Heres a link to the live [project]()
   - It is compiled in lists that the restaurant staff can update by removing or adding items when needed.
   - The user returns to the main menu by hitting enter on their keyboard. 
 
-![The Wine List](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+![The Wine List](https://github.com/lisalindqvist95/proj3/blob/main/media/winelist.png)
 
 - __Review Your Drink__
 
@@ -32,14 +32,14 @@ Heres a link to the live [project]()
   - The user adds the number for their table and a score between 1-5. 
   - If the user enters invalid data the will recieve an error message to try again. 
 
-![Review your drink](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+![Review your drink](https://github.com/lisalindqvist95/proj3/blob/main/media/review.png)
 
 - __Randomize Drink__
 
   - A fun feature for the user who can't choose their drink and want a surprise. 
   - The drink is chosen based on a computer randomized number. 
 
-![Randomize Drink](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
+![Randomize Drink](https://github.com/lisalindqvist95/proj3/blob/main/media/randomized_drink.png)
 
 - __Recommended Wines__ 
 
@@ -47,11 +47,13 @@ Heres a link to the live [project]()
   - One or more wines are recommended based on the food that the user inputs from the menu.
   - Invalid choises results in an error message. 
 
-![Recommended Wines](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+![Recommended Wines](https://github.com/lisalindqvist95/proj3/blob/main/media/recommend.png)
 
 - __Exit__
 
   - Breaks the loop and exits the program.
+
+![Exit](https://github.com/lisalindqvist95/proj3/blob/main/media/exit.png)
 
 ### Features Left to Implement
 
@@ -98,8 +100,9 @@ The project was depoloyed via Heroku.
 - Steps for deployment:
   - Save and push code to GitHub repository 
   - Create new Heroku app
-  - Create Config Vars
-  - Set the buildbacks to Python and NodeJS in that order
+  - Create Config Vars in Settings
+  - Set the buildbacks to Python and NodeJS in that order in Settings
+  - Go to Deploy
   - Link the Heroku app to the repository
   - Click on deploy
 
