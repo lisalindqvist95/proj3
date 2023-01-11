@@ -27,6 +27,8 @@ def recommend():
     print("3. GRASS FED RIBEYE STEAK (12OZ)\nGrilled vine tomato,"
           "parmesan-truffle fries, herb compound butter\n")
     print("4. STEAKHOUSE BURGER\nBrioche bun, bacon, fries\n")
+    print("5. PAN ROASTED AIRLINE CHICKEN\nParsnip-potato purée, roasted baby"
+          "vegetables, sherry green peppercorn demi-glace\n")
     """
     Print out the menu that the user can choose from.
     """
@@ -78,7 +80,16 @@ def recommend():
                 from the red wine tuple.
                 """
 
-            elif meal > 4 or meal < 1:
+            elif meal == 5:
+                print(heading)
+                slice_tup = red_wine_tup[0:2]
+                for i in slice_tup:
+                    print("*" + i + "\n")
+                """
+                If user chooses option 5 they will recieve a suggestion
+                from the red wine tuple.
+                """
+            elif meal > 5 or meal < 1:
                 raise ValueError()
 
             else:
@@ -88,7 +99,7 @@ def recommend():
             Check if user inputs invalid number.
             """
         except ValueError:
-            print("Please choose a number between 1-4.")
+            print("Please choose a number between 1-5.")
         break
 
 

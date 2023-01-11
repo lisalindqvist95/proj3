@@ -1,10 +1,10 @@
 # Interactive Drink Menu
 
-Interactive Drink Menu is, just like the name implies, a drink menu for a restaurant which the user can interact with. When a lot more menus are digital and acciessible via QR-codes there is an opportunity to include more interactive features for the user. For example the possibility to get recommended drinks or rating their drinks which also can benefit the restaurant to improve their menu. A digital menu is also easier for the restaurant to update when an item runs out. 
+Interactive Drink Menu is, just like the name implies, a drink menu for a restaurant which the user can interact with. When a lot more menus are digital and accessible via QR-codes there is an opportunity to include more interactive features for the user. For example the possibility to get recommended drinks or rating their drinks which also can benefit the restaurant to improve their menu. A digital menu is also easier for the restaurant to update when an item runs out. 
 
 Heres a link to the live [project](https://interactive-drink-menu.herokuapp.com/)
 
-![Responsice Mockup](https://github.com/lisalindqvist95/proj3/blob/main/media/mockup.png)
+![Responsive Mockup](https://github.com/lisalindqvist95/proj3/blob/main/media/mockup.png)
 
 ## Features 
 
@@ -30,7 +30,7 @@ Heres a link to the live [project](https://interactive-drink-menu.herokuapp.com/
 
   - This feature lets the user rate their drink choice and their input is exported to a Google sheet for the restaurant to recieve the reviews. 
   - The user adds the number for their table and a score between 1-5. 
-  - If the user enters invalid data the will recieve an error message to try again. 
+  - If the user enters invalid data they will recieve an error message to try again. 
 
 ![Review your drink](https://github.com/lisalindqvist95/proj3/blob/main/media/review.png)
 
@@ -58,45 +58,45 @@ Heres a link to the live [project](https://interactive-drink-menu.herokuapp.com/
 ### Features Left to Implement
 
 __Review__ 
-- The review feature could be developed to be more specific and allow the user to rate more things, for example service.
-- It would also be beneficial for the restaurant to know who left the review so that they can imporve their drinks. Although the users might want the possibility to be anonymous.
+- The review feature could be developed to be more specific and allow the user to rate more things, for example the service.
+- It would also be beneficial for the restaurant to know who left the review so that they can improve their drinks. Although the users might want the possibility to be anonymous.
 
 __Order__
 - It would be useful if the user could use the app to order directly.
-- If the menu is accessed via a QR-code this could potentially scan the table number so that the restaurant knows which table to serve. 
+- If the menu is accessed via a QR-code this could potentially inform the app of the table number so that the restaurant knows which table to serve. 
 
 __Style__
 - For this to be a desireble menu it would need some styling using HTML and CSS. 
 
 ## Data model
-The project contains a main file for the menu and differnt files containing the functions of each feature for a better structure. Since all features contains differnet information they are easier to read and update if they are contained in different files instead of having everything in the same file. 
+The project contains a main file for the menu and different files containing the functions of each feature for a better structure. Since all features contains differnet information they are easier to read and update if they are contained in different files instead of having everything in the same file. 
 
 ## Testing 
 
 - The program has been manually tested by inserting invalid input, for example strings instead of numbers or numbers outside of menu choices. 
 
-- Testinghas been done in loca terminal and the Heroku terminal. 
+- Testing has been done in the local terminal and the Heroku terminal. 
 
 ### Validator Testing 
 
 - PEP8 Linter
   - No errors were found when passing through the PEP8 Linter, PEP8online.com
 
-### Bugs
+## Bugs
 
-## Fixed Bugs
+### Fixed Bugs
 
-- Bugs with program closing before user chooses were fixed by including loops that the user will have to confitm to exit. 
+- Bugs with program closing before user chooses were fixed by including loops that the user will have to confirm to exit. 
 
-- Bugs with program crashing by invalid input were fixed by incluting Try/Except statements. 
+- Bugs with program crashing by invalid input were fixed by including Try/Except statements. 
 
-## Unfixed Bugs
+### Unfixed Bugs
 
-- Since the user inserts the table-number and the review in the same input, there is a risk that the user will input the wrong table number or rating that is not between 1-5. This could be solved by using another type of form (for example via HTML) to get this information and separate the data collection. Or if you can get the Table/ordernumber via the QR-code you might not need to enter this manually, but this would requer more comlicated back-end coding.
+- Since the user inserts the table-number and the review in the same input, there is a risk that the user will input the wrong table number or rating that is not between 1-5. This could be solved by using another type of form (for example via HTML) to get this information and separate the data collection. Or if you can get the table/order-number via the QR-code you might not need to enter this manually, but this would requier more comlicated back-end coding.
 
 
 ## Deployment
-The project was depoloyed via Heroku.
+The project was deployed via Heroku.
 - Steps for deployment:
   - Save and push code to GitHub repository 
   - Create new Heroku app
@@ -110,7 +110,7 @@ The project was depoloyed via Heroku.
 
 - List of wines for Wine List from [Plaza New York](https://www.theplazany.com/wp-content/uploads/2022/06/Champagne-Bar-Cocktail-Menu-June-2022.pdf )
 - List of foods for Recommend Drink from [Hilton New York](https://www.hilton.com/en/hotels/nyccnci-conrad-new-york-midtown/dining/dabble/?WT.mc_id=zlada0ww1CH2psh3ggl4ampanc5dkt6NYCCNCI7_153682779_1003528&gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNnS0MLheFT-zCeFlZ_lNykji4kJnOaVp12Rx0hTuugspU82tBjJS28aAiDOEALw_wcB&gclsrc=aw.ds&htmlMenu4ActiveTab=2)
-- Drink redipes from [Wikipedia](https://www.wikipedia.org/)
+- Drink recipes from [Wikipedia](https://www.wikipedia.org/)
 - How to clear terminal from [Scaler](https://www.scaler.com/topics/how-to-clear-screen-in-python/)
 - Code Institute for Love Sandwiches project
 - Code Institute for Python Essentials Template
