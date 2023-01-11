@@ -98,6 +98,7 @@ The project was depoloyed via Heroku.
 - Steps for deployment:
   - Save and push code to GitHub repository 
   - Create new Heroku app
+  - Create Config Vars
   - Set the buildbacks to Python and NodeJS in that order
   - Link the Heroku app to the repository
   - Click on deploy

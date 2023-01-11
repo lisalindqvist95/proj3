@@ -11,7 +11,7 @@ while z == 1:
     """
     Clear terminal.
     """
-    menuoptions = ["", "1. Winelist", "2. Review yor drink",
+    menuoptions = ["", "1. Winelist", "2. Review your drink",
                    "3. Randomize drink", "4. Recommended wines", "5. Exit"]
     """
     List of menu options.

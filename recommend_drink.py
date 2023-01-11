@@ -39,7 +39,6 @@ def recommend():
     while True:
         try:
             if meal == 1:
-                system('clear')
                 print(heading)
                 slice_tup = white_wine_tup[0:2]
                 for i in slice_tup:
@@ -50,7 +49,6 @@ def recommend():
                 """
 
             elif meal == 2:
-                system('clear')
                 print(heading)
                 slice_tup = white_wine_tup[1:2:3]
                 for i in slice_tup:
@@ -61,7 +59,6 @@ def recommend():
                 """
 
             elif meal == 3:
-                system('clear')
                 print(heading)
                 slice_tup = red_wine_tup[1:3]
                 for i in slice_tup:
@@ -72,7 +69,6 @@ def recommend():
                 """
 
             elif meal == 4:
-                system('clear')
                 print(heading)
                 slice_tup = red_wine_tup[2:3]
                 for i in slice_tup:
@@ -82,13 +78,15 @@ def recommend():
                 from the red wine tuple.
                 """
 
+            elif meal > 4 or meal < 1:
+                raise ValueError()
+
             else:
-                if meal > 4 or meal < 1:
-                    raise ValueError()
+                raise ValueError()
+
             """
             Check if user inputs invalid number.
             """
-
         except ValueError:
             print("Please choose a number between 1-4.")
         break
